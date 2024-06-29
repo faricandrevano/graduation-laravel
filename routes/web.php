@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormPengumuman;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FormPengumuman::class,'index']);
+Route::get('/hasil_proses',[FormPengumuman::class, 'hasil_proses'])->name('post.hasil');
+Route::get('/hasil',[FormPengumuman::class, 'hasil'])->name('hasil');

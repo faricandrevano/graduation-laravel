@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .text-number {
+        @apply sm:text-6xl text-5xl;
+    }
+    .text-aplhabet {
+        @apply sm:text-[10px] text-[8px] text-center uppercase pt-3;
+    }
+}
